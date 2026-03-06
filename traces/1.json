@@ -1,0 +1,49 @@
+{
+    "data": [
+        {
+            "processes": {
+                "S1": {
+                    "serviceName": "A",
+                    "tags": []
+                },
+                "S2": {
+                    "serviceName": "B",
+                    "tags": []
+                }
+            },
+            "traceID": "test1",
+            "spans": [
+                {
+                    "traceID": "test1",
+                    "spanID": "test1",
+                    "operationName": "O1",
+                    "references": [],
+                    "startTime": 1,
+                    "duration": 100,
+                    "processID": "S1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "test1",
+                    "spanID": "secondspan",
+                    "operationName": "O2",
+                    "startTime": 31,
+                    "duration": 40,
+                    "processID": "S2",
+                    "warnings": null,
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "test1",
+                            "spanID": "test1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "total": 0,
+    "limit": 0,
+    "offset": 0,
+    "errors": null
+}

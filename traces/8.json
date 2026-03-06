@@ -1,0 +1,117 @@
+{
+    "data": [
+        {
+            "processes": {
+                "S1": {
+                    "serviceName": "A",
+                    "tags": []
+                },
+                "S2": {
+                    "serviceName": "B",
+                    "tags": []
+                },
+                "S3": {
+                    "serviceName": "X",
+                    "tags": []
+                },
+                "S4": {
+                    "serviceName": "D",
+                    "tags": []
+                },
+                "S5": {
+                    "serviceName": "C",
+                    "tags": []
+                }
+            },
+            "traceID": "test8",
+            "spans": [
+                {
+                    "traceID": "test8",
+                    "spanID": "test8",
+                    "operationName": "O1",
+                    "references": [],
+                    "startTime": 1,
+                    "duration": 100,
+                    "processID": "S1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "test8",
+                    "spanID": "B",
+                    "operationName": "O2",
+                    "startTime": 10,
+                    "duration": 60,
+                    "processID": "S2",
+                    "warnings": null,
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "test8",
+                            "spanID": "test8"
+                        }
+                    ]
+                },
+                {
+                    "traceID": "test8",
+                    "spanID": "X",
+                    "operationName": "O3",
+                    "startTime": 15,
+                    "duration": 50,
+                    "processID": "S3",
+                    "warnings": null,
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "test8",
+                            "spanID": "test8"
+                        }
+                    ]
+                },
+                {
+                    "traceID": "test8",
+                    "spanID": "D",
+                    "operationName": "O4",
+                    "startTime": 80,
+                    "duration": 10,
+                    "processID": "S4",
+                    "warnings": null,
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "test8",
+                            "spanID": "test8"
+                        }
+                    ]
+                },
+                {
+                    "traceID": "test8",
+                    "spanID": "C",
+                    "operationName": "O5",
+                    "startTime": 20,
+                    "duration": 40,
+                    "processID": "S5",
+                    "warnings": null,
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "test8",
+                            "spanID": "B"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "testing": [
+        {
+            "[S1] O1": 400,
+            "[S2] O2": 200,
+            "[S3] O3": 100,
+            "[S4] O4": 300
+        }
+    ],
+    "total": 0,
+    "limit": 0,
+    "offset": 0,
+    "errors": null
+}

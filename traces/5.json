@@ -1,0 +1,89 @@
+{
+    "data": [
+        {
+            "processes": {
+                "S1": {
+                    "serviceName": "A",
+                    "tags": []
+                },
+                "S2": {
+                    "serviceName": "B",
+                    "tags": []
+                },
+                "S3": {
+                    "serviceName": "C",
+                    "tags": []
+                },
+                "S4": {
+                    "serviceName": "D",
+                    "tags": []
+                }
+            },
+            "traceID": "test5",
+            "spans": [
+                {
+                    "traceID": "test5",
+                    "spanID": "test5",
+                    "operationName": "O1",
+                    "references": [],
+                    "startTime": 1,
+                    "duration": 100,
+                    "processID": "S1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "test5",
+                    "spanID": "secondspan",
+                    "operationName": "O2",
+                    "startTime": 31,
+                    "duration": 40,
+                    "processID": "S2",
+                    "warnings": null,
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "test5",
+                            "spanID": "test5"
+                        }
+                    ]
+                },
+                {
+                    "traceID": "test5",
+                    "spanID": "thirdspan",
+                    "operationName": "O3",
+                    "startTime": 41,
+                    "duration": 20,
+                    "processID": "S3",
+                    "warnings": null,
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "test5",
+                            "spanID": "secondspan"
+                        }
+                    ]
+                },
+                {
+                    "traceID": "test5",
+                    "spanID": "fourthspan",
+                    "operationName": "O4",
+                    "startTime": 47,
+                    "duration": 9,
+                    "processID": "S4",
+                    "warnings": null,
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "test5",
+                            "spanID": "thirdspan"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "total": 0,
+    "limit": 0,
+    "offset": 0,
+    "errors": null
+}

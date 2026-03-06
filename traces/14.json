@@ -1,0 +1,157 @@
+{
+  "data": [
+    {
+      "processes": {
+        "S1": {
+          "serviceName": "A",
+          "tags": []
+        },
+        "S2": {
+          "serviceName": "B",
+          "tags": []
+        },
+        "S3": {
+          "serviceName": "C",
+          "tags": []
+        },
+        "S4": {
+          "serviceName": "D",
+          "tags": []
+        },
+        "S5": {
+          "serviceName": "E",
+          "tags": []
+        },
+        "S6": {
+          "serviceName": "F",
+          "tags": []
+        },
+        "S7": {
+          "serviceName": "G",
+          "tags": []
+        }
+      },
+      "traceID": "test14",
+      "spans": [
+        {
+          "traceID": "test14",
+          "spanID": "test14",
+          "operationName": "O1",
+          "references": [],
+          "startTime": 0,
+          "duration": 100,
+          "processID": "S1",
+          "warnings": null
+        },
+        {
+          "traceID": "test14",
+          "spanID": "B",
+          "operationName": "O2",
+          "startTime": 5,
+          "duration": 50,
+          "processID": "S2",
+          "warnings": null,
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "test14",
+              "spanID": "test14"
+            }
+          ]
+        },
+        {
+          "traceID": "test14",
+          "spanID": "C",
+          "operationName": "O3",
+          "startTime": 60,
+          "duration": 35,
+          "processID": "S3",
+          "warnings": null,
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "test14",
+              "spanID": "test14"
+            }
+          ]
+        },
+        {
+          "traceID": "test14",
+          "spanID": "D",
+          "operationName": "O4",
+          "startTime": 20,
+          "duration": 10,
+          "processID": "S4",
+          "warnings": null,
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "test14",
+              "spanID": "test14"
+            }
+          ]
+        },
+        {
+          "traceID": "test14",
+          "spanID": "E",
+          "operationName": "O5",
+          "startTime": 10,
+          "duration": 45,
+          "processID": "S5",
+          "warnings": null,
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "test14",
+              "spanID": "B"
+            }
+          ]
+        },
+        {
+          "traceID": "test14",
+          "spanID": "F",
+          "operationName": "O6",
+          "startTime": 70,
+          "duration": 10,
+          "processID": "S6",
+          "warnings": null,
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "test14",
+              "spanID": "C"
+            }
+          ]
+        },
+        {
+          "traceID": "test14",
+          "spanID": "G",
+          "operationName": "O7",
+          "startTime": 65,
+          "duration": 20,
+          "processID": "S7",
+          "warnings": null,
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "test14",
+              "spanID": "C"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "testing": [
+    {
+      "[S1] O1": 400,
+      "[S2] O2": 200,
+      "[S3] O3": 100,
+      "[S3] O4": 300
+    }
+  ],
+  "total": 0,
+  "limit": 0,
+  "offset": 0,
+  "errors": null
+}

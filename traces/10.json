@@ -1,0 +1,137 @@
+{
+    "data": [
+        {
+            "processes": {
+                "S1": {
+                    "serviceName": "A",
+                    "tags": []
+                },
+                "S2": {
+                    "serviceName": "B",
+                    "tags": []
+                },
+                "S3": {
+                    "serviceName": "D",
+                    "tags": []
+                },
+                "S4": {
+                    "serviceName": "C",
+                    "tags": []
+                },
+                "S5": {
+                    "serviceName": "E",
+                    "tags": []
+                },
+                "S6": {
+                    "serviceName": "F",
+                    "tags": []
+                }
+            },
+            "traceID": "test10",
+            "spans": [
+                {
+                    "traceID": "test10",
+                    "spanID": "test10",
+                    "operationName": "O1",
+                    "references": [],
+                    "startTime": 1,
+                    "duration": 100,
+                    "processID": "S1",
+                    "warnings": null
+                },
+                {
+                    "traceID": "test10",
+                    "spanID": "B",
+                    "operationName": "O2",
+                    "startTime": 5,
+                    "duration": 10,
+                    "processID": "S2",
+                    "warnings": null,
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "test10",
+                            "spanID": "test10"
+                        }
+                    ]
+                },
+                {
+                    "traceID": "test10",
+                    "spanID": "D",
+                    "operationName": "O3",
+                    "startTime": 20,
+                    "duration": 75,
+                    "processID": "S3",
+                    "warnings": null,
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "test10",
+                            "spanID": "test10"
+                        }
+                    ]
+                },
+                {
+                    "traceID": "test10",
+                    "spanID": "F",
+                    "operationName": "O4",
+                    "startTime": 30,
+                    "duration": 10,
+                    "processID": "S6",
+                    "warnings": null,
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "test10",
+                            "spanID": "D"
+                        }
+                    ]
+                },
+                {
+                    "traceID": "test10",
+                    "spanID": "C",
+                    "operationName": "O4",
+                    "startTime": 81,
+                    "duration": 5,
+                    "processID": "S4",
+                    "warnings": null,
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "test10",
+                            "spanID": "D"
+                        }
+                    ]
+                },
+                {
+                    "traceID": "test10",
+                    "spanID": "E",
+                    "operationName": "O5",
+                    "startTime": 82,
+                    "duration": 2,
+                    "processID": "S5",
+                    "warnings": null,
+                    "references": [
+                        {
+                            "refType": "CHILD_OF",
+                            "traceID": "test10",
+                            "spanID": "C"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "testing": [
+        {
+            "[S1] O1": 400,
+            "[S2] O2": 200,
+            "[S3] O3": 100,
+            "[S3] O4": 300
+        }
+    ],
+    "total": 0,
+    "limit": 0,
+    "offset": 0,
+    "errors": null
+}
