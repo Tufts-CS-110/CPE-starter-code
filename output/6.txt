@@ -1,0 +1,27 @@
+(A_O1_start, 1)
+-->
+(A_O1_seg_end, 10)
+-->
+(B_O2_start, 10)
+-->
+(B_O2_seg_end, 20)
+-->
+(C_O4_start, 20)
+-->
+(C_O4_end, 60)
+-->
+(B_O2_seg_start, 60)
+-->
+(B_O2_end, 70)
+-->
+(A_O1_seg_start, 70)
+-->
+(A_O1_seg_end, 80)
+-->
+(D_O3_start, 80)
+-->
+(D_O3_end, 90)
+-->
+(A_O1_seg_start, 90)
+-->
+(A_O1_end, 101)

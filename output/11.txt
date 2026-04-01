@@ -1,0 +1,35 @@
+(A_O1_start, 0)
+-->
+(A_O1_seg_end, 10)
+-->
+(B_O2_start, 10)
+-->
+(B_O2_seg_end, 15)
+-->
+(F_O6_start, 15)
+-->
+(F_O6_end, 25)
+-->
+(B_O2_seg_start, 25)
+-->
+(B_O2_end, 30)
+-->
+(A_O1_seg_start, 30)
+-->
+(A_O1_seg_end, 40)
+-->
+(C_O3_start, 40)
+-->
+(C_O3_end, 60)
+-->
+(A_O1_seg_start, 60)
+-->
+(A_O1_seg_end, 70)
+-->
+(D_O4_start, 70)
+-->
+(D_O4_end, 90)
+-->
+(A_O1_seg_start, 90)
+-->
+(A_O1_end, 100)

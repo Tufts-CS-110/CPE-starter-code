@@ -1,0 +1,19 @@
+(A_O1_start, 0)
+-->
+(A_O1_seg_end, 30)
+-->
+(D_O4_start, 30)
+-->
+(D_O4_seg_end, 40)
+-->
+(F_O6_start, 40)
+-->
+(F_O6_end, 80)
+-->
+(D_O4_seg_start, 80)
+-->
+(D_O4_end, 90)
+-->
+(A_O1_seg_start, 90)
+-->
+(A_O1_end, 100)

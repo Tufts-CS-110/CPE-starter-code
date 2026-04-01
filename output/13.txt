@@ -1,0 +1,27 @@
+(A_O1_start, 0)
+-->
+(A_O1_seg_end, 30)
+-->
+(C_O3_start, 30)
+-->
+(C_O3_seg_end, 50)
+-->
+(E_O5_start, 50)
+-->
+(E_O5_seg_end, 60)
+-->
+(G_O7_start, 60)
+-->
+(G_O7_end, 75)
+-->
+(E_O5_seg_start, 75)
+-->
+(E_O5_end, 80)
+-->
+(C_O3_seg_start, 80)
+-->
+(C_O3_end, 90)
+-->
+(A_O1_seg_start, 90)
+-->
+(A_O1_end, 100)

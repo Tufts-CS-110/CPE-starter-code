@@ -1,0 +1,43 @@
+(A_O1_start, 1)
+-->
+(A_O1_seg_end, 5)
+-->
+(B_O2_start, 5)
+-->
+(B_O2_end, 15)
+-->
+(A_O1_seg_start, 15)
+-->
+(A_O1_seg_end, 20)
+-->
+(D_O3_start, 20)
+-->
+(D_O3_seg_end, 30)
+-->
+(F_O4_start, 30)
+-->
+(F_O4_end, 40)
+-->
+(D_O3_seg_start, 40)
+-->
+(D_O3_seg_end, 81)
+-->
+(C_O4_start, 81)
+-->
+(C_O4_seg_end, 82)
+-->
+(E_O5_start, 82)
+-->
+(E_O5_end, 84)
+-->
+(C_O4_seg_start, 84)
+-->
+(C_O4_end, 86)
+-->
+(D_O3_seg_start, 86)
+-->
+(D_O3_end, 95)
+-->
+(A_O1_seg_start, 95)
+-->
+(A_O1_end, 101)

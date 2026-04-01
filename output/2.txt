@@ -1,0 +1,19 @@
+(A_O1_start, 1)
+-->
+(A_O1_seg_end, 31)
+-->
+(B_O2_start, 31)
+-->
+(B_O2_end, 71)
+-->
+(A_O1_seg_start, 71)
+-->
+(A_O1_seg_end, 81)
+-->
+(C_O3_start, 81)
+-->
+(C_O3_end, 91)
+-->
+(A_O1_seg_start, 91)
+-->
+(A_O1_end, 101)
