@@ -112,8 +112,54 @@ class Graph():
         # -------------------------------------------------------------
         # TODO: your implementation goes here.  The autograder will call
         #       this method directly when evaluating your submission.
-        # -------------------------------------------------------------
-        raise NotImplementedError("computeCriticalPath must be implemented")
+        # ------------------------------------------------------------_
+        pathReturn = []
+
+        # Guard if curNode None
+        if curNode is None:
+            return []
+
+        if self.last_CP_event is None:
+            end_event = CPEvent(
+                curNode.endTime,
+                curNode.serviceName + "_" + curNode.opName + "_end",
+                None,
+            )
+            self.last_CP_event = end_event
+            self.cur_CP_event = end_event
+        else:
+            self.create_cp_event(curNode, "_end")
+
+        curNode.on_critical_path = True
+        pathReturn.append(curNode)
+
+        children = list(curNode.children.keys())
+
+        if len(children) == 0:
+            self.end_Node = curNode
+            return pathReturn
+
+        # Sort children by end time
+        sortedChildren = sorted(children, key=lambda c: c.endTime, reverse=True)
+        active_child = sortedChildren[0]
+        self.create_cp_seg_event(active_child, "_seg_start")
+        pathReturn.extend(self.computeCriticalPath(active_child))
+
+        # Rest of children
+        for i in range(1, len(sortedChildren)):
+            c = sortedChildren[i]
+            if self.happensBefore(curNode, sortedChildren, c, active_child):
+                cur = self.end_Node
+                while cur != curNode:
+                    self.create_cp_event(cur, "_start")
+                    self.create_cp_seg_event(cur, "_seg_end")
+                    cur = cur.parent
+
+                self.create_cp_seg_event(c, "_seg_start")
+                active_child = c
+                pathReturn.extend(self.computeCriticalPath(c))
+
+        return pathReturn
 
 
     def printCPEvents(self):
