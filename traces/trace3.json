@@ -1,0 +1,690 @@
+{
+  "data": [
+    {
+      "traceID": "184c276868e70999",
+      "spans": [
+        {
+          "traceID": "184c276868e70999",
+          "spanID": "4e54be823c4d0cac",
+          "flags": 1,
+          "operationName": "/search.Search/Nearby",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "184c276868e70999",
+              "spanID": "184c276868e70999"
+            }
+          ],
+          "startTime": 1775091770544569,
+          "duration": 51620,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "gRPC"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "184c276868e70999",
+          "spanID": "285513d63018e618",
+          "flags": 1,
+          "operationName": "/geo.Geo/Nearby",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "184c276868e70999",
+              "spanID": "11c8c9c636d21b76"
+            }
+          ],
+          "startTime": 1775091770545331,
+          "duration": 1094,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "gRPC"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "184c276868e70999",
+          "spanID": "52fef7839b45525a",
+          "flags": 1,
+          "operationName": "/rate.Rate/GetRates",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "184c276868e70999",
+              "spanID": "11c8c9c636d21b76"
+            }
+          ],
+          "startTime": 1775091770546460,
+          "duration": 47576,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "gRPC"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "184c276868e70999",
+          "spanID": "11c8c9c636d21b76",
+          "flags": 1,
+          "operationName": "/search.Search/Nearby",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "184c276868e70999",
+              "spanID": "4e54be823c4d0cac"
+            }
+          ],
+          "startTime": 1775091770545294,
+          "duration": 49723,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "gRPC"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "184c276868e70999",
+          "spanID": "2ce463b4f94a7420",
+          "flags": 1,
+          "operationName": "memcached_capacity_get_multi_number",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "184c276868e70999",
+              "spanID": "7b693eb626a8abc2"
+            }
+          ],
+          "startTime": 1775091770598657,
+          "duration": 2491,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [],
+          "processID": "p3",
+          "warnings": null
+        },
+        {
+          "traceID": "184c276868e70999",
+          "spanID": "49fa16ee0f11faaa",
+          "flags": 1,
+          "operationName": "memcached_reserve_get_multi_number",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "184c276868e70999",
+              "spanID": "7b693eb626a8abc2"
+            }
+          ],
+          "startTime": 1775091770611264,
+          "duration": 2771,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [],
+          "processID": "p3",
+          "warnings": null
+        },
+        {
+          "traceID": "184c276868e70999",
+          "spanID": "7b693eb626a8abc2",
+          "flags": 1,
+          "operationName": "/reservation.Reservation/CheckAvailability",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "184c276868e70999",
+              "spanID": "4ce6cfe747c295a5"
+            }
+          ],
+          "startTime": 1775091770597366,
+          "duration": 16700,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "gRPC"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [],
+          "processID": "p3",
+          "warnings": null
+        },
+        {
+          "traceID": "184c276868e70999",
+          "spanID": "4a00ceeb7be99b3a",
+          "flags": 1,
+          "operationName": "/geo.Geo/Nearby",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "184c276868e70999",
+              "spanID": "285513d63018e618"
+            }
+          ],
+          "startTime": 1775091770545983,
+          "duration": 148,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "gRPC"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [],
+          "processID": "p4",
+          "warnings": null
+        },
+        {
+          "traceID": "184c276868e70999",
+          "spanID": "3da80d242c5e9c5a",
+          "flags": 1,
+          "operationName": "memcached_get_profile",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "184c276868e70999",
+              "spanID": "6733569e761db922"
+            }
+          ],
+          "startTime": 1775091770615003,
+          "duration": 956,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [],
+          "processID": "p5",
+          "warnings": null
+        },
+        {
+          "traceID": "184c276868e70999",
+          "spanID": "6733569e761db922",
+          "flags": 1,
+          "operationName": "/profile.Profile/GetProfiles",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "184c276868e70999",
+              "spanID": "5b2cd128e08800b7"
+            }
+          ],
+          "startTime": 1775091770614954,
+          "duration": 2805,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "gRPC"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [],
+          "processID": "p5",
+          "warnings": null
+        },
+        {
+          "traceID": "184c276868e70999",
+          "spanID": "095f0522002f3c4f",
+          "flags": 1,
+          "operationName": "memcached_get_multi_rate",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "184c276868e70999",
+              "spanID": "45af1702bc40052a"
+            }
+          ],
+          "startTime": 1775091770547105,
+          "duration": 1356,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [],
+          "processID": "p6",
+          "warnings": null
+        },
+        {
+          "traceID": "184c276868e70999",
+          "spanID": "45af1702bc40052a",
+          "flags": 1,
+          "operationName": "/rate.Rate/GetRates",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "184c276868e70999",
+              "spanID": "52fef7839b45525a"
+            }
+          ],
+          "startTime": 1775091770547031,
+          "duration": 37950,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "gRPC"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [],
+          "processID": "p6",
+          "warnings": null
+        },
+        {
+          "traceID": "184c276868e70999",
+          "spanID": "4ce6cfe747c295a5",
+          "flags": 1,
+          "operationName": "/reservation.Reservation/CheckAvailability",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "184c276868e70999",
+              "spanID": "184c276868e70999"
+            }
+          ],
+          "startTime": 1775091770596223,
+          "duration": 18124,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "gRPC"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "184c276868e70999",
+          "spanID": "5b2cd128e08800b7",
+          "flags": 1,
+          "operationName": "/profile.Profile/GetProfiles",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "184c276868e70999",
+              "spanID": "184c276868e70999"
+            }
+          ],
+          "startTime": 1775091770614375,
+          "duration": 4086,
+          "tags": [
+            {
+              "key": "component",
+              "type": "string",
+              "value": "gRPC"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "client"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "184c276868e70999",
+          "spanID": "184c276868e70999",
+          "flags": 1,
+          "operationName": "HTTP GET /hotels",
+          "references": [],
+          "startTime": 1775091770544432,
+          "duration": 74992,
+          "tags": [
+            {
+              "key": "sampler.type",
+              "type": "string",
+              "value": "probabilistic"
+            },
+            {
+              "key": "sampler.param",
+              "type": "float64",
+              "value": 1
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.url",
+              "type": "string",
+              "value": "/hotels?inDate=2015-04-09&outDate=2015-04-10&lat=37.7749&lon=-122.4194"
+            },
+            {
+              "key": "component",
+              "type": "string",
+              "value": "net/http"
+            },
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "frontend",
+          "tags": [
+            {
+              "key": "client-uuid",
+              "type": "string",
+              "value": "1aebd42e24ecd821"
+            },
+            {
+              "key": "hostname",
+              "type": "string",
+              "value": "50e24f397cec"
+            },
+            {
+              "key": "ip",
+              "type": "string",
+              "value": "172.18.0.22"
+            },
+            {
+              "key": "jaeger.version",
+              "type": "string",
+              "value": "Go-2.30.0"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "search",
+          "tags": [
+            {
+              "key": "client-uuid",
+              "type": "string",
+              "value": "1c8c4707ecb53a56"
+            },
+            {
+              "key": "hostname",
+              "type": "string",
+              "value": "b1ed44b7b356"
+            },
+            {
+              "key": "ip",
+              "type": "string",
+              "value": "172.18.0.25"
+            },
+            {
+              "key": "jaeger.version",
+              "type": "string",
+              "value": "Go-2.30.0"
+            }
+          ]
+        },
+        "p3": {
+          "serviceName": "reservation",
+          "tags": [
+            {
+              "key": "client-uuid",
+              "type": "string",
+              "value": "6c50e000cdb1f321"
+            },
+            {
+              "key": "hostname",
+              "type": "string",
+              "value": "223891e92a27"
+            },
+            {
+              "key": "ip",
+              "type": "string",
+              "value": "172.18.0.20"
+            },
+            {
+              "key": "jaeger.version",
+              "type": "string",
+              "value": "Go-2.30.0"
+            }
+          ]
+        },
+        "p4": {
+          "serviceName": "geo",
+          "tags": [
+            {
+              "key": "client-uuid",
+              "type": "string",
+              "value": "a41af22f74f9888"
+            },
+            {
+              "key": "hostname",
+              "type": "string",
+              "value": "b3d4c731ca65"
+            },
+            {
+              "key": "ip",
+              "type": "string",
+              "value": "172.18.0.21"
+            },
+            {
+              "key": "jaeger.version",
+              "type": "string",
+              "value": "Go-2.30.0"
+            }
+          ]
+        },
+        "p5": {
+          "serviceName": "profile",
+          "tags": [
+            {
+              "key": "client-uuid",
+              "type": "string",
+              "value": "29d99237e2522d33"
+            },
+            {
+              "key": "hostname",
+              "type": "string",
+              "value": "2dade07733c5"
+            },
+            {
+              "key": "ip",
+              "type": "string",
+              "value": "172.18.0.19"
+            },
+            {
+              "key": "jaeger.version",
+              "type": "string",
+              "value": "Go-2.30.0"
+            }
+          ]
+        },
+        "p6": {
+          "serviceName": "rate",
+          "tags": [
+            {
+              "key": "client-uuid",
+              "type": "string",
+              "value": "1ffb9b37331c315f"
+            },
+            {
+              "key": "hostname",
+              "type": "string",
+              "value": "16b6d0f9a376"
+            },
+            {
+              "key": "ip",
+              "type": "string",
+              "value": "172.18.0.18"
+            },
+            {
+              "key": "jaeger.version",
+              "type": "string",
+              "value": "Go-2.30.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    }
+  ],
+  "total": 0,
+  "limit": 0,
+  "offset": 0,
+  "errors": null
+}
