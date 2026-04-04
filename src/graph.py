@@ -11,7 +11,8 @@ logging.basicConfig(format='%(asctime)s %(levelname)-8s %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S')
 debug_on = logging.getLogger(__name__).isEnabledFor(logging.DEBUG)
 
-# constants used throughout the code
+# constants used throughout the code. Some of these constants
+# can help you read in fields in the JSON trace files. 
 _SPANS = 'spans'
 _SPAN_ID = 'spanID'
 _REFERENCES = 'references'
@@ -99,8 +100,11 @@ class Graph():
         self.end_Node = None
         self.seq_Node_stack = deque()
 
-        # parsing logic is omitted here; refer to the full source if you
-        # need to construct a graph from JSON data.
+        # You need to fill in this constructor to read JSON files into
+        # in-memory graphs, # which are ocmprised of teh fields above 
+        # and spans, which are represented as graphNodes. Note that 
+        # rootNode must point to a graphNode.
+
 
     def computeCriticalPath(self, curNode):
         """Return a list of nodes on the critical path rooted at `curNode`.
