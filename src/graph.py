@@ -1,7 +1,9 @@
 ##### Starter template for graph.py
 # This version mirrors the structure of the original repository,
-# but the critical-path algorithm (`computeCriticalPath`) has been
-# left unimplemented for you to fill in as described by the handout.
+# but: 1) the critical-path algorithm (`computeCriticalPath`) has been
+# left unimplemented for you to fill in as described by the handout; 2) 
+# the __init__ graph constructor must be extended to read in JSON files 
+# into GraphNodes. The root graphNode must be set to self.rootNode.
 
 import logging
 from collections import deque
